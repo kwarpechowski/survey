@@ -1,0 +1,4 @@
+{
+  "presets": ["@babel/es2015", "@babel/stage-1", "@babel/react"],
+  "plugins": ["async-to-promises"]
+}

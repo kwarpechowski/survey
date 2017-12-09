@@ -1,0 +1,1 @@
+https://badanie.hakama.pl
