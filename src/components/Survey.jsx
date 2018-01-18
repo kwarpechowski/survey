@@ -43,7 +43,8 @@ export class Survey extends Component {
 
     this.results.push({
       time: time,
-      data: d
+      data: d,
+      endDate: new Date().toLocaleString()
     });
 
     this.setState(prevState => ({

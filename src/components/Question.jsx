@@ -129,7 +129,14 @@ export class Question extends Component {
 
   close = () => {
     const time = Date.now() - this.time;
-    this.props.onClose(this.selected || Object.keys(this.state.answers), time);
+    let x = null;
+
+    if (this.selected) {
+      x = Object.keys(this.selected).filter(x => this.selected[x])
+    } else {
+      x = Object.keys(this.state.answers);
+    }
+    this.props.onClose(x, time);
   };
 
   setActive = x => {
